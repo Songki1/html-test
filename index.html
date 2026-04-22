@@ -10,7 +10,7 @@
 <!! ---a는 앵커로 하이퍼링크를 건다. 그리고 style은 CSS코드이다.--->
 <style>
 
-    @media(max-width:800px){
+    @media(max-width:500px){
     div{
        display:none;
      }
@@ -43,13 +43,13 @@ ul{
   display: grid;
   grid-template-columns: 300px 1fr; 
 }
-
 </style>
 
 </head>
 <div>
 <body>
   <h1><a href="index.html">Song's Music</a></font></h1>
+
 <div id="grid">  
     <ul>
       <li><a href="Recommendation.html">1. 노래추천</font></a></li>
@@ -69,6 +69,22 @@ ul{
  
     <div>
         <h2>예제</h2>
+        <p>
+          <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black';
+          document.querySelector('body').style.color='white';">
+          <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white';
+          document.querySelector('body').style.color='black';">
+          <input id="night-day" type="button" value="night" onclick="
+          if(document.querySelector('#night-day').value==='night'){
+          document.querySelector('body').style.backgroundColor='black';
+          document.querySelector('#night-day').value='day';
+          } else {
+          document.querySelector('body').style.backgroundColor='white'
+          document.querySelector('body').style.color='black';
+          document.querySelector('#night-day').value='night'
+          }">
+        </p>
+           
         <h2>The one who's running the show - <a href="https://youtu.be/aAg3bwzSuLk?si=LStSYixR1wwOiO5w" target="_blank">공식유튜브 바로가기</a></h2>
         <img src="Caine.png">
 
