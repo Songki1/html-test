@@ -8,6 +8,8 @@
 <!! ul은 리스트를 부모로 묶어주는 것을 이야기 함>
 </head>
 
+<script src="colors.js"></script>
+
 <style>
   h1{
   font-size: 60px;
@@ -27,6 +29,10 @@
   grid-template-columns: 300px 1fr; 
 }
 
+.js{font=weight: bold; color:blue}
+
+#first {color:green}
+
 </style>
 
 <body>
@@ -35,6 +41,10 @@
           <ul>
           <li><a href="1.html">1. 노래추천</a></li>
           <li><a href="2.html">2. 노래검색</a></li>
+          <li><a href="3.html">3. 음원사이트</a></li>
+          <ul><input id="night_day" type="button" value="night" onclick="
+           nightDayHandler(this)
+           "> </ul>
           </ul>
           <!! ol은 자동으로 숫자를 매겨주는 list를 이야기 함!!>
 
@@ -54,7 +64,7 @@
         <strong>뮤직비디오 연출: 잭 & 마이카 프레시아도 </strong><br></p>
 
         <h2><strong>The lyric</strong></h2>
-        <p>It's news to me that it's news to you. 
+        <p>It's <span style="font-weight:bold"><span style="font-weight:bold">news</span></span> to me that it's <span style="font-weight:bold">news</span> to you. 
         <br>To which degree, who answers to who? 
         <br>We could go on and on, but in the end, who are we kidding? 
         <br>My divinity is past infinity. <strong>Am I getting through?</strong></p>
@@ -65,8 +75,8 @@
         <br>So strap on in and get on the chin. And don't forget who's running the show.</p>
         <p style="margin-top: 20px">
         <br>Now look at this 
-        <br>absolute bliss!
-        <br>Oh, what a shock!
+        <br><span id="first" class="js";>absolute bliss!</span>
+        <br><span class="js";>Oh, what a shock!</span>
         <br>Watch where you walk!</p>
         <p>I'm the host. I run the place. 
         <br>Caine, That is my name. 
